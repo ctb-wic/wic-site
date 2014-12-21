@@ -15,6 +15,7 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'spring-boot'
+apply plugin: 'checkstyle'
 
 jar {
     baseName = 'wic-site'
@@ -28,6 +29,9 @@ configurations {
     provided
     compile.extendsFrom provided
 }
+
+project.checkstyle.configFile = file("${project.projectDir}/google_checks.xml")
+project.checkstyle.toolVersion = '6.1.1'
 
 repositories {
     maven { url "http://repo.spring.io/libs-release" }
