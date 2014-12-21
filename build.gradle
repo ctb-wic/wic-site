@@ -24,6 +24,11 @@ jar {
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
+configurations {
+    provided
+    compile.extendsFrom provided
+}
+
 repositories {
     maven { url "http://repo.spring.io/libs-release" }
     maven { url "http://repo.spring.io/libs-milestone" }
@@ -38,6 +43,8 @@ dependencies {
     compile("org.springframework.boot:spring-boot-starter-data-rest")
 
     compile("org.hsqldb:hsqldb")
+
+    provided("org.projectlombok:lombok:1.14.8")
 
     testCompile("org.springframework.boot:spring-boot-starter-test")
 }
