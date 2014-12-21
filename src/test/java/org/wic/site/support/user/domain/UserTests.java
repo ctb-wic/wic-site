@@ -10,13 +10,13 @@ import static org.hamcrest.core.Is.is;
  */
 public class UserTests {
 
-    @Test
-    public void testLombok() {
-        String username = "izeye";
+  @Test
+  public void testLombok() {
+    String username = "izeye";
 
-        User user = new User();
-        user.setUsername(username);
-        assertThat(user.getUsername(), is(username));
-    }
+    User user = new User();
+    user.setUsername(username);
+    assertThat(user.getUsername(), is(username));
+  }
 
 }
