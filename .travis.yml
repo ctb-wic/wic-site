@@ -16,3 +16,5 @@ notifications:
   campfire:
     rooms:
       - wic8:8274802668cc09f4642da849e664223eaad71de6:606919
+    on_success: always
+    on_failure: always
