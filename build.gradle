@@ -49,6 +49,8 @@ dependencies {
 
     compile("org.hsqldb:hsqldb")
 
+    compile("org.mariadb.jdbc:mariadb-java-client:1.1.7")
+
     provided("org.projectlombok:lombok:1.14.8")
 
     testCompile("org.springframework.boot:spring-boot-starter-test")
