@@ -8,3 +8,8 @@ notifications:
       - enosent7@gmail.com
     on_success: always
     on_failure: always
+  irc:
+    channels:
+      - "chat.freenode.net#wic-site
+    on_success: always
+    on_failure: always
