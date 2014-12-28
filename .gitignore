@@ -1,3 +1,23 @@
 # Created by .gitignore support plugin (hsz.mobi)
+
+# IntelliJ config
 .idea
 wic-site.iml
+
+# Classpath
+/build/
+/bin/
+
+# Gradle config
+.gradle/
+
+# Eclipse config
+.settings/
+.classpath
+.project
+
+# Checkstyle config
+.checkstyle
+
+# etc
+.DS_Store
