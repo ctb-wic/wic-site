@@ -18,4 +18,4 @@ notifications:
       - wic8:8274802668cc09f4642da849e664223eaad71de6@606919
     on_success: always
     on_failure: always
-  flowdock: 710196e63c74a6427cd6857e3cc91d44
+  flowdock: b418a2dcecbf8ef0c52b1fa598b1a644
