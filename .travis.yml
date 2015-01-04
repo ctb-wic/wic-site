@@ -19,5 +19,3 @@ notifications:
     on_success: always
     on_failure: always
   flowdock: 710196e63c74a6427cd6857e3cc91d44
-    on_success: always
-    on_failure: always
