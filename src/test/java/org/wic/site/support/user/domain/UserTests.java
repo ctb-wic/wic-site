@@ -1,9 +1,9 @@
 package org.wic.site.support.user.domain;
 
-import org.junit.Test;
-
-import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
+import static org.hamcrest.MatcherAssert.assertThat;
+
+import org.junit.Test;
 
 /**
  * Created by wic on 12/21/14.

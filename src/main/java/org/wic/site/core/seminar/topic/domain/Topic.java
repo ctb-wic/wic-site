@@ -1,14 +1,20 @@
 package org.wic.site.core.seminar.topic.domain;
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+
 /**
  * Created by wic on 12/21/14.
  */
+@Data
 @Entity
+@NoArgsConstructor
 public class Topic {
 
   @Id
@@ -16,4 +22,7 @@ public class Topic {
   private Long id;
   private String name;
 
+  public Topic(String name){
+
+  }
 }
