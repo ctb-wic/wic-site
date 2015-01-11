@@ -1,9 +1,9 @@
 buildscript {
     repositories {
+        jcenter()
         maven { url "http://repo.spring.io/snapshot" }
         maven { url "http://repo.spring.io/libs-release" }
         maven { url "http://repo.spring.io/libs-milestone" }
-        mavenCentral()
         mavenLocal()
     }
 
@@ -36,10 +36,10 @@ project.checkstyle.configFile = file("${project.projectDir}/google_checks.xml")
 project.checkstyle.toolVersion = '6.1.1'
 
 repositories {
+    jcenter()
     maven { url "http://repo.spring.io/snapshot" }
     maven { url "http://repo.spring.io/libs-release" }
     maven { url "http://repo.spring.io/libs-milestone" }
-    mavenCentral()
     mavenLocal()
 }
 
