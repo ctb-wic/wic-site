@@ -14,8 +14,6 @@ import javax.persistence.Id;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-import org.wic.site.support.common.TopicProgress;
-
 
 /**
  * Created by wic on 12/21/14.
@@ -32,7 +30,7 @@ public class Topic {
   private String name;
   
   @Enumerated(EnumType.STRING)
-  private TopicProgress progress = TopicProgress.QUEUED;
+  private TopicStatus progress = TopicStatus.QUEUED;
   
   @Temporal(TemporalType.DATE)
   private Date createdDate;

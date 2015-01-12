@@ -8,7 +8,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
 
-import org.wic.site.support.common.AttendanceStatus;
 import org.wic.site.support.user.domain.User;
 
 import lombok.Data;

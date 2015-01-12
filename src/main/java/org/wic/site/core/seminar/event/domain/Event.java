@@ -16,8 +16,6 @@ import javax.persistence.ManyToMany;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-import org.wic.site.support.common.SeminarStatus;
-
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -27,14 +25,14 @@ import lombok.NoArgsConstructor;
 @Data
 @Entity
 @NoArgsConstructor
-public class Seminar {
+public class Event {
 
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
   private Long id;
  
   @Enumerated(EnumType.STRING)
-  private SeminarStatus status = SeminarStatus.CREATED;
+  private EventStatus status = EventStatus.CREATED;
   
   @Temporal(TemporalType.DATE)
   private Date meetingDate;
