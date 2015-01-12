@@ -1,15 +1,12 @@
-package org.wic.site.core.seminar.seminar.domain;
+package org.wic.site.core.seminar.event.domain;
 
 import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
 
-import org.wic.site.support.common.AttendanceStatus;
-import org.wic.site.support.user.domain.User;
+import org.wic.site.core.seminar.topic.domain.Topic;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -20,19 +17,18 @@ import lombok.NoArgsConstructor;
 @Data
 @Entity
 @NoArgsConstructor
-public class Attendance {
+public class TopicCandidate {
 
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
   private Long id;	
 
   @OneToOne(optional=false)
-  private User user;
+  private Topic topic;
   
-  @Enumerated(EnumType.STRING)
-  private AttendanceStatus status = AttendanceStatus.APPLIED;
+  private Integer votes;
   
-  public Attendance(User user){ 
+  public TopicCandidate(Topic topic){
 	  
   }
   

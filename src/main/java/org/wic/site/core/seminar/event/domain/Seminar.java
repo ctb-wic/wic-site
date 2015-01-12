@@ -1,4 +1,4 @@
-package org.wic.site.core.seminar.seminar.domain;
+package org.wic.site.core.seminar.event.domain;
 
 import java.util.ArrayList;
 import java.util.Date;
