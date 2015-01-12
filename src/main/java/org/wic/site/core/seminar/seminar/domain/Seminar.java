@@ -39,7 +39,6 @@ public class Seminar {
   @Temporal(TemporalType.DATE)
   private Date meetingDate;
   
-  @Enumerated(EnumType.STRING)
   private String location;
   
   @ManyToMany(cascade=CascadeType.ALL, fetch=FetchType.LAZY)
